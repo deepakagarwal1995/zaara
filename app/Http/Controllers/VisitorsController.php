@@ -108,9 +108,10 @@ $ded = [
                 if ($numberOfDays < 1) {
                     return redirect()->route('index')->with('error', 'Date Error Please select correct Dates');
                 }
-                $regular_data = Cabs::where('type', '1')->where('status', '1')->get();
 
-                $luxary_data = Cabs::where('type', '2')->where('status', '1')->get();
+                $regular_data = Cabs::where('type', '1')->where('status', '1')->orderBy('orders', 'ASC')->get();
+
+                $luxary_data = Cabs::where('type', '2')->where('status', '1')->orderBy('orders', 'ASC')->get();
 
                 return view('visitors.outstation_cabs', compact('request', 'regular_data', 'luxary_data', 'distance', 'numberOfDays'));
             } else {
