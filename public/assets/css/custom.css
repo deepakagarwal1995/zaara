@@ -1,0 +1,1310 @@
+  header {
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 900;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, .3)
+  }
+
+  header .container {
+      display: flex;
+      align-items: center;
+  }
+
+  .navbar-brand {
+      padding: 0;
+      width: 200px
+  }
+
+  .navbar-brand img {
+      width: 100%;
+      height: auto;
+      max-height: 52px;
+  }
+
+  .contactno {
+      color: var(--primaryColor);
+      font-size: 1.8rem;
+      font-weight: 700;
+      padding: .85rem 0;
+      margin-left: auto;
+  }
+
+  .contactno a {
+      color: var(--primaryColor)
+  }
+
+  .topdeskmenu {
+      margin-left: 20px;
+      position: relative
+  }
+
+  .topdeskmenu .btndropdown {
+      display: block;
+      cursor: pointer;
+      padding: 10px 0px 10px 10px;
+  }
+
+  .topdeskmenu .dropdown-menu {
+      width: 200px;
+      top: 56px;
+      background: #fff;
+      box-shadow: 0 3px 3px rgba(0, 0, 0, .4);
+      right: 0
+  }
+
+  .dropnavinside ul li a {
+      display: block;
+      padding: .5rem 1rem
+  }
+
+  .topdeskmenu .dropdown-menu li a:hover {
+      color: #fff;
+      background: #333
+  }
+
+  .topdeskmenu .dropdown-menu li:last-child a {
+      border-bottom: none
+  }
+
+  @media all and (max-width:979px) {
+      .homebanner.inbanner {
+          background: linear-gradient(45deg, #ed1f26, #f16663)
+      }
+
+      header {
+          padding: 0
+      }
+
+      header .container {
+          display: flex;
+          align-items: center
+      }
+
+      .contactno {
+          font-size: 1.3rem
+      }
+
+      .navbar-brand {
+          width: 120px;
+          float: none;
+          padding: 10px 0
+      }
+
+      .topdeskmenu {
+          margin: 0;
+      }
+
+      .dropdown.open .btndropdown {
+          position: fixed;
+          z-index: 9999;
+          right: 5px;
+          top: 10px;
+          padding: 1rem
+      }
+
+      .topdeskmenu.dropdown.open .btndropdown svg .a {
+          stroke: #fff !important
+      }
+
+      .topdeskmenu .dropdown-menu {
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          align-items: center;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          background: var(--gradient)
+      }
+
+      .dropnavinside {
+          width: 100%;
+          padding: 0 2rem
+      }
+
+      .dropnavinside p {
+          color: #fff;
+          line-height: 2.5rem;
+          margin: 0
+      }
+
+      .dropnavinside p a {
+          color: #fff
+      }
+
+      .dropnavinside .closedropdown {
+          position: absolute;
+          top: 15px;
+          right: 10px;
+          z-index: 1;
+          color: #fff;
+          border: 2px solid #eee;
+          border-radius: 100%;
+          width: 30px;
+          height: 30px;
+          line-height: 32px;
+          text-align: center;
+          cursor: pointer
+      }
+
+      .dropnavinside ul {
+          margin-bottom: 1rem
+      }
+
+      .dropnavinside ul li {
+          border-bottom: 1px solid #fff
+      }
+
+      .dropnavinside ul li a {
+          color: #fff;
+          padding: .875rem 0
+      }
+
+      .dropnavinside ul li a:hover {
+          background: 0 0
+      }
+  }
+
+  /*Booking Panel*/
+  .tripselection li,
+  .tripselection li a {
+      display: inline-block;
+      position: relative
+  }
+
+  .homebanner h1,
+  .tripselection li a {
+      color: #fff;
+      text-transform: capitalize
+  }
+
+  .select_detail .inpbx,
+  .select_detail .minpbx-split {
+      display: flex;
+      width: 35%
+  }
+
+  .homebanner {
+      background: var(--gradient);
+      padding: 2.2rem 0 3rem
+  }
+
+  .homebanner h1 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1rem
+  }
+
+  .homebanner h1.inhead {
+      margin: 0
+  }
+
+  .homebanner .tab-pane form {
+      display: flex;
+      flex-basis: auto
+  }
+
+  .tripselection {
+      margin-bottom: 10px;
+      text-align: center
+  }
+
+  .tripselection li {
+      float: none;
+      margin: 0 5px 0 0
+  }
+
+  .tripselection li a {
+      border-radius: var(--comradius);
+      padding: 0 1.5rem;
+      border: 2px solid #fff;
+      background: 0 0;
+      font-family: var(--titlefont);
+      line-height: 2.2rem;
+      font-size: .85rem;
+      text-decoration: none;
+      outline: 0
+  }
+
+  .tripselection li.active a {
+      background: #fff;
+      color: #333
+  }
+
+  .tripselection li.active::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -10px;
+      margin-left: -5px;
+      border-top: 10px solid #fff;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent
+  }
+
+  .select_detail {
+      background: #fff;
+      padding: 0;
+      border-radius: var(--comradius);
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .1)
+  }
+
+  .select_detail .minpbx-split .inpbx {
+      width: 50%
+  }
+
+  .select_detail .inpbx {
+      border-right: 1px solid #ccc;
+      padding: 10px;
+      position: relative;
+      margin: 0;
+      flex-wrap: wrap
+  }
+
+  .select_detail .inpbx.timebx {
+      width: 20%
+  }
+
+  .select_detail .inpbx label {
+      display: block;
+      width: 100%;
+      margin: 0 0 5px;
+      font-weight: 500;
+      font-size: .8rem;
+      color: #666;
+      text-transform: uppercase
+  }
+
+  .select_detail .inpbx input {
+      border: none;
+      font-weight: 700;
+      font-size: 1rem;
+      width: 100%;
+      padding: 0
+  }
+
+  .select_detail .inpbx select {
+      border: none;
+      width: 100%;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--primaryColor);
+      background: 0 0
+  }
+
+  .select_detail .btn_big {
+      border-radius: 0 var(--comradius) var(--comradius) 0;
+      text-transform: capitalize;
+      margin-left: auto
+  }
+
+  .autocomplete-items {
+      background: #fff;
+      position: absolute;
+      border: 1px solid #d4d4d4;
+      border-bottom: none;
+      border-top: none;
+      z-index: 99;
+      top: 100%;
+      left: 0;
+      right: 0;
+      max-height: 190px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, .5);
+      -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .5);
+      overflow: auto;
+      overflow-x: hidden
+  }
+
+  .autocomplete-items div {
+      cursor: pointer;
+      background-color: #fff;
+      border-bottom: 1px solid #d9d9d9;
+      padding: 3px 10px;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      font-weight: 600;
+      color: #333;
+      text-align: left;
+      text-transform: capitalize
+  }
+
+  .autocomplete-items div .grayspan {
+      font-size: .8rem;
+      color: #b3b3b3;
+      position: static !important
+  }
+
+  .autocomplete-items div .grayspan .grayblodspan {
+      color: #333;
+      position: static !important
+  }
+
+  .autocomplete-items .onbelowcity {
+      font-size: .7rem;
+      font-weight: 700;
+      color: var(--brandColor);
+      text-transform: none
+  }
+
+  .datepicker {
+      padding: 10px;
+      box-sizing: border-box;
+      width: 270px;
+      background: #fff;
+      box-shadow: 0 0 5px #999
+  }
+
+  .datepicker .table-condensed {
+      width: 100%
+  }
+
+  .datepicker .table-condensed th {
+      text-align: center;
+      padding: 7px;
+      text-transform: uppercase;
+      color: #333;
+      font-weight: 700;
+      font-size: 14px
+  }
+
+  .datepicker .table-condensed .next,
+  .datepicker .table-condensed .prev {
+      cursor: pointer
+  }
+
+  .datepicker .table-condensed td {
+      color: #000;
+      padding: 7px;
+      font-size: 14px;
+      text-align: center;
+      cursor: pointer
+  }
+
+  .datepicker .table-condensed td.disabled {
+      color: #ccc;
+      cursor: not-allowed
+  }
+
+  .datepicker .table-condensed td.new,
+  .datepicker .table-condensed td.old {
+      color: #eee
+  }
+
+  .datepicker .table-condensed td.today,
+  .datepicker .table-condensed td:hover {
+      background: var(--gradient);
+      color: #fff
+  }
+
+  .latestupLeft .latestpostbx img {
+      height: 200px;
+      object-fit: cover;
+  }
+
+  .latestPostright .latestpostbx img {
+      height: 79px;
+      object-fit: cover;
+  }
+
+  @media all and (max-width:979px) {
+      .homebanner {
+          margin: 0;
+          padding: 1rem 0;
+          background: 0 0 !important;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, .3)
+      }
+
+      .homebanner .tab-pane form {
+          display: block
+      }
+
+      .hMsearchbx h1 {
+          color: #333;
+          margin: 0 0 10px
+      }
+
+      .tripselection {
+          text-align: center;
+          background: var(--gradientRev);
+          width: auto;
+          margin: 0 -15px;
+          position: relative
+      }
+
+      .tripselection li {
+          display: inline;
+          margin: 0
+      }
+
+      .tripselection li a {
+          display: inline-block;
+          border-radius: 0;
+          border: none;
+          padding: 0 15px;
+          color: #fff;
+          text-transform: capitalize
+      }
+
+      .tripselection li a:hover,
+      .tripselection li.active a {
+          color: var(--primaryColor);
+          background: #fff
+      }
+
+      .tripselection li.active::after {
+          display: none
+      }
+
+      .select_detail {
+          box-shadow: none;
+          background: 0 0;
+          margin: 0 -15px
+      }
+
+      .select_detail .inpbx.timebx,
+      .select_detail .minpbx-split {
+          width: 100%
+      }
+
+      .select_detail .inpbx {
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid #d1d1d1;
+          padding: 10px 15px
+      }
+
+      .select_detail .inpbx label {
+          text-align: left
+      }
+
+      .select_detail .btn_big {
+          border-radius: var(--comradius);
+          float: none;
+          width: calc(100% - 30px);
+          margin: 15px auto 0;
+          display: block
+      }
+  }
+
+  /* bootstrap*/
+  .dropdown.open .dropdown-menu {
+      display: flex;
+  }
+
+  .dropdown-menu {
+      right: 0;
+      left: auto
+  }
+
+  .container {
+      margin: 0 auto;
+      width: 1200px;
+      padding: 0px 15px;
+  }
+
+  @media (max-width:979px) {
+      .container {
+          width: auto;
+      }
+  }
+
+  @media print {
+
+      blockquote,
+      img,
+      pre,
+      tr {
+          page-break-inside: avoid
+      }
+
+      *,
+      :after,
+      :before {
+          background: 0 0 !important;
+          color: #000 !important;
+          -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+          text-shadow: none !important
+      }
+
+      a:visited {
+          text-decoration: underline
+      }
+
+      select {
+          background: #fff !important
+      }
+  }
+
+  .img-responsive {
+      display: block;
+      max-width: 100%;
+      height: auto
+  }
+
+  .col-xs-12,
+  input[type=submit].btn-block {
+      width: 100%
+  }
+
+  .col-xs-11 {
+      width: 91.66666667%
+  }
+
+  .col-xs-10 {
+      width: 83.33333333%
+  }
+
+  .col-xs-9 {
+      width: 75%
+  }
+
+  .col-xs-8 {
+      width: 66.66666667%
+  }
+
+  .col-xs-7 {
+      width: 58.33333333%
+  }
+
+  .col-xs-6 {
+      width: 50%
+  }
+
+  .col-xs-5 {
+      width: 41.66666667%
+  }
+
+  .col-xs-4 {
+      width: 33.33333333%
+  }
+
+  .col-xs-3 {
+      width: 25%
+  }
+
+  .col-xs-2 {
+      width: 16.66666667%
+  }
+
+  .col-xs-1 {
+      width: 8.33333333%
+  }
+
+  @media (min-width:315px) {
+      .row {
+          margin-left: 0;
+          margin-right: 0
+      }
+  }
+
+  .fade {
+      opacity: 0;
+      -webkit-transition: opacity .15s linear;
+      -o-transition: opacity .15s linear;
+      transition: opacity .15s linear
+  }
+
+  .fade.in {
+      opacity: 1
+  }
+
+  .collapse,
+  .tab-content>.tab-pane {
+      display: none;
+      visibility: hidden
+  }
+
+  .tab-content>.active {
+      display: block;
+      visibility: visible
+  }
+
+  .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      z-index: 1000;
+      display: none;
+      list-style: none;
+      text-align: left
+  }
+
+  .dropdown-menu>.active>a,
+  .dropdown-menu>.active>a:focus,
+  .dropdown-menu>.active>a:hover {
+      color: #fff;
+      text-decoration: none;
+      outline: 0;
+      background-color: #337ab7
+  }
+
+  .dropdown .dropdown-menu {
+      top: auto;
+  }
+
+  @media (min-width:992px) {
+
+      .col-md-1,
+      .col-md-10,
+      .col-md-11,
+      .col-md-12,
+      .col-md-2,
+      .col-md-3,
+      .col-md-4,
+      .col-md-5,
+      .col-md-6,
+      .col-md-7,
+      .col-md-8,
+      .col-md-9 {
+          float: left
+      }
+
+      .col-md-12 {
+          width: 100%
+      }
+
+      .col-md-11 {
+          width: 91.66666667%
+      }
+
+      .col-md-10 {
+          width: 83.33333333%
+      }
+
+      .col-md-9 {
+          width: 75%
+      }
+
+      .col-md-8 {
+          width: 66.66666667%
+      }
+
+      .col-md-7 {
+          width: 58.33333333%
+      }
+
+      .col-md-6 {
+          width: 50%
+      }
+
+      .col-md-5 {
+          width: 41.66666667%
+      }
+
+      .col-md-4 {
+          width: 33.33333333%
+      }
+
+      .col-md-3 {
+          width: 25%
+      }
+
+      .col-md-2 {
+          width: 16.66666667%
+      }
+
+      .col-md-1 {
+          width: 8.33333333%
+      }
+  }
+
+  .clearfix:after,
+  .clearfix:before,
+  .container:after,
+  .container:before,
+  .row:after,
+  .row:before {
+      content: " ";
+      display: table
+  }
+
+  .clearfix:after,
+  .container:after,
+  .nav:after,
+  .row:after {
+      clear: both
+  }
+
+  .ourservice .col-xs-6 {
+      float: left;
+  }
+
+  .ourservice a {
+      display: block;
+      text-align: center;
+      height: 260px;
+      border-radius: 2px;
+      background: var(--boxbg3);
+      outline: 0px;
+      color: var(--primaryColor);
+      margin: 0 4px;
+      border-radius: var(--comradius);
+  }
+
+  .ourservice figure {
+      height: 130px;
+      padding: 2.5rem 0;
+  }
+
+  .ourservice span {
+      text-transform: uppercase;
+      color: var(--primaryColor);
+      display: block;
+      font-family: var(--titlefont);
+      font-weight: bold;
+      font-size: 1.25rem;
+      padding: 0 1.5rem;
+  }
+
+  .ourservice span i {
+      display: block;
+      margin-top: 0.8rem;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      font-family: var(--parafont);
+      text-transform: none;
+      font-style: normal;
+      font-weight: normal;
+  }
+
+  @media all and (max-width: 979px) {
+      .ourservice a {
+          height: 100px;
+          margin: 5px;
+      }
+
+      .ourservice figure {
+          height: 70px;
+          padding: 10px 0 0 0;
+      }
+
+      .ourservice span {
+          padding: 0 5px;
+          font-size: 0.75rem;
+      }
+
+      .ourservice span i {
+          display: none;
+      }
+  }
+
+  .latestpostbx {
+      border-radius: var(--comradius);
+      border: 1px solid #ccc;
+      width: 48%;
+  }
+
+  .latestpostbx img {
+      width: 100%;
+      height: auto;
+      border-radius: var(--comradius) var(--comradius) 0 0;
+  }
+
+  .latestpostbx h4 a {
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+  }
+
+  .latestpostbx h4 a:hover {
+      text-decoration: underline;
+  }
+
+  .latestpostbx .latestmCnt {
+      padding: 1rem;
+  }
+
+  .latestpostbx .latestmCnt p {
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      margin: 0px;
+  }
+
+  .latestUpcont {
+      padding: 1rem 0;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .latestUpcont .latestupLeft {
+      width: 68%;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .latestUpcont .latestPostright {
+      width: 29%;
+  }
+
+  .latestUpcont .latestPostright .latestpostbx {
+      width: 100%;
+      border: none;
+      display: flex;
+      margin-bottom: 1.25rem;
+  }
+
+  .latestUpcont .latestPostright .latestpostbx h6 {
+      padding: 0px;
+  }
+
+  .latestUpcont .latestPostright .latestpostbx h6 a {
+      color: var(--primaryColor);
+      -webkit-line-clamp: 3;
+  }
+
+  .latestUpcont .latestPostright .latestpostbx:last-child {
+      margin: 0px;
+  }
+
+  .latestUpcont .latestPostright .latestpostbx .latestmCnt {
+      padding: 0px;
+  }
+
+  .latestUpcont .latestPostright .latestpostbx .latestmCnt p {
+      -webkit-line-clamp: 2;
+  }
+
+  .latestUpcont .latestPostright .latestpostbx img {
+      border-radius: var(--comradius);
+      border: 1px solid #ccc;
+  }
+
+  .latestUpcont .latestPostright .latestpostbx figure {
+      width: 120px;
+      margin-right: 10px;
+      flex: 0 0 120px;
+  }
+
+  @media all and (max-width: 767px) {
+      .latestUpcont {
+          flex-flow: column;
+          padding: 0px;
+      }
+
+      .latestUpcont .latestpostbx {
+          padding: 0 0 2px 0px;
+      }
+
+      .latestUpcont .latestpostbx .latestmCnt {
+          padding: 7px;
+      }
+
+      .latestUpcont .latestpostbx h4 a {
+          -webkit-line-clamp: 3;
+      }
+
+      .latestUpcont .latestupLeft {
+          width: 100%;
+          margin-bottom: 15px;
+      }
+
+      .latestUpcont .latestPostright {
+          width: 100%;
+          width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          overflow-x: auto;
+      }
+
+      .latestUpcont .latestPostright .latestpostbx {
+          display: inline-flex;
+          width: 290px;
+          white-space: normal;
+          vertical-align: top;
+          margin: 0 10px 0 0;
+      }
+
+      .latestUpcont .latestPostright .latestpostbx p {
+          display: none;
+      }
+  }
+
+  .ourbenefit {
+      background: var(--gradient2);
+      padding: 3rem 0;
+      margin: 1rem 0;
+      text-align: center;
+  }
+
+  .ourbenefit h4 {
+      margin-bottom: 0.875px;
+  }
+
+  .ourbenefit p {
+      padding: 0 2rem;
+  }
+
+  @media all and (max-width: 979px) {
+      .ourbenefit p {
+          padding: 0 0 1.25rem 0;
+      }
+  }
+
+  /*Page CSS*/
+  .bkdatacar .bkeditbx .bsvg,
+  .bkdatacar .bkeditbx ul li .mapexchange {
+      color: var(--primaryColor);
+      vertical-align: middle
+  }
+
+  .bkdatacar .modfipagecab .inpbx input,
+  .bkdatacar .modfipagecab .inpbx select {
+      font-size: 14px;
+      padding: 0 5px;
+      border: none;
+      font-weight: 500;
+      width: 100%
+  }
+
+  .faredetail,
+  .hide-search-tab {
+      display: none
+  }
+
+  .faredetail tr:nth-child(2n) td,
+  .payment_contcxt {
+      background: var(--boxbg3)
+  }
+
+  .payment_contcxt {
+      padding: .5rem 0;
+      text-transform: capitalize
+  }
+
+  .bkdatacar .bkeditbx ul li {
+      display: inline-block;
+      margin: 0 .5rem
+  }
+
+  .bkdatacar .bkeditbx ul li:first-child {
+      margin: 0 .5rem 0 0
+  }
+
+  .bkdatacar .bkeditbx ul li:last-child {
+      border-left: 2px solid #999
+  }
+
+  .bkdatacar .bkeditbx .bsvg {
+      display: inline-block;
+      margin-right: .25rem
+  }
+
+  .bkdatacar .bkeditbx .btn {
+      margin: 0 0 0 1rem;
+      color: #fff
+  }
+
+  .bkdatacar .modfipagecab {
+      padding-top: 10px;
+      border-top: 1px solid #ccc;
+      margin-top: 10px;
+      display: none
+  }
+
+  .bkdatacar .modfipagecab form {
+      display: flex
+  }
+
+  .bkdatacar .modfipagecab .minpbx-split {
+      display: flex;
+      width: 50%
+  }
+
+  .bkdatacar .modfipagecab .inpbx {
+      border: 1px solid #ccc;
+      margin-right: 10px;
+      padding: 0 10px;
+      height: 40px;
+      width: 35%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      position: relative
+  }
+
+  .carBoption .cabListFdtl,
+  .sidebenefit li {
+      align-items: center;
+      display: flex
+  }
+
+  .bkdatacar .modfipagecab .inpbx select {
+      color: #333;
+      background: #fff
+  }
+
+  .choose_cabtab {
+      text-align: center;
+      margin-bottom: 1.5rem
+  }
+
+  .choose_cabtab li {
+      position: relative;
+      display: inline-block;
+      margin: 0 .3rem
+  }
+
+  .choose_cabtab li a {
+      display: block;
+      line-height: 2rem;
+      border-radius: var(--comradius);
+      border: 1px solid var(--buttonColor);
+      padding: 0 1rem
+  }
+
+  .choose_cabtab li.active a {
+      background: var(--buttonColor);
+      color: #fff
+  }
+
+  .choose_cabtab li.active::after {
+      position: absolute;
+      content: "";
+      border-top: 8px solid var(--buttonColor);
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      margin-left: -4px
+  }
+
+  .sidebenefit {
+      padding: 1.25rem;
+      box-shadow: 0 0 3px rgba(0, 0, 0, .4);
+      margin-left: 3rem;
+      border-radius: var(--comradius)
+  }
+
+  .sidebenefit li {
+      font-size: 1.3rem;
+      font-weight: 700;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #ccc
+  }
+
+  .sidebenefit li svg {
+      margin-right: 10px
+  }
+
+  .sidebenefit li:last-child {
+      border: none
+  }
+
+  .carBoption {
+      margin-bottom: 1rem;
+      box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+      border-radius: var(--comradius)
+  }
+
+  .carBoption .bookcb {
+      font-size: 1rem
+  }
+
+  .carBoption figure {
+      padding: 5px;
+      width: 20%;
+      border-right: 1px solid #ddd
+  }
+
+  .carBoption figure img {
+      display: block;
+      width: 100%;
+      height: auto
+  }
+
+  .carBoption .car_detail {
+      width: 60%;
+      padding: 10px 30px
+  }
+
+  .carBoption .car_detail h4 span {
+      font-size: .75rem;
+      font-weight: 400;
+      text-transform: capitalize
+  }
+
+  .carBoption .car_detail p {
+      margin-bottom: 5px
+  }
+
+  .carBoption .car_detail .checkfairpp {
+      cursor: pointer;
+      display: flex;
+      align-items: center
+  }
+
+  .carBoption .car_detail .checkfairpp .arrow_down {
+      border-left: 1px solid var(--brandColor);
+      border-bottom: 1px solid var(--brandColor);
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      transform: rotate(-45deg);
+      vertical-align: top;
+      margin: -5px 0 0 8px;
+      transition: .2s
+  }
+
+  .carBoption .tpbook {
+      width: 20%;
+      padding: 10px
+  }
+
+  .carBoption .tpbook p {
+      font-weight: 700;
+      font-size: 1.5rem;
+      text-align: center
+  }
+
+  .carBoption.selected .car_detail .checkfairpp .arrow_down {
+      transform: rotate(135deg);
+      margin: 4px 0 0 8px !important
+  }
+
+  .faredetail {
+      border-top: 1px solid #ddd;
+      padding: 1rem
+  }
+
+  .faredetail tr:last-child {
+      font-weight: 600
+  }
+
+  .faredetail td {
+      font-size: .85rem;
+      padding: .625rem
+  }
+
+  .faredetail ul {
+      margin: 0 40px 0 0
+  }
+
+  .faredetail ul li {
+      font-size: .85rem;
+      border-bottom: 1px solid #ddd;
+      padding: .625rem 0
+  }
+
+  .faredetail ul li:last-child {
+      border-bottom: none
+  }
+
+  @media all and (max-width:979px) {
+      .sidebenefit {
+          margin: 0 0 20px;
+          padding: 0
+      }
+
+      .bkdatacar .modfipagecab .minpbx-split .inpbx:last-child,
+      .faredetail ul {
+          margin: 0
+      }
+
+      .faredetail ul li:last-child {
+          border-bottom: 1px solid #ddd
+      }
+
+      .carBoption .tpbook,
+      .carBoption figure {
+          padding: 5px;
+          width: 25%
+      }
+
+      .carBoption .car_detail {
+          padding: 5px 10px;
+          width: 50%
+      }
+
+      .carBoption .car_detail h4 {
+          font-size: .8rem;
+          line-height: .8rem
+      }
+
+      .carBoption .car_detail p {
+          font-size: .75rem;
+          margin-bottom: 2px;
+          line-height: normal
+      }
+
+      .carBoption .car_detail .checkfairpp {
+          font-size: .75rem
+      }
+
+      .carBoption .car_detail .checkfairpp .arrow_down {
+          width: 7px;
+          height: 7px;
+          margin: -2px 0 0 4px
+      }
+
+      .carBoption .car_detail h2 {
+          font-size: 12px;
+          margin-bottom: 2px;
+          line-height: normal
+      }
+
+      .carBoption .car_detail h2 span {
+          font-size: 11px
+      }
+
+      .carBoption .bookcb {
+          font-size: .75rem;
+          padding: .5rem
+      }
+
+      .carBoption .tpbook p {
+          font-size: 1rem;
+          margin: 0
+      }
+
+      .carBoption.selected .car_detail .checkfairpp .arrow_down {
+          margin: 5px 0 0 5px !important
+      }
+
+      .bkdatacar .bkeditbx ul li {
+          margin: 0 3px
+      }
+
+      .bkdatacar .bkeditbx ul li:first-child {
+          margin: 0 3px 0 0
+      }
+
+      .bkdatacar .bkeditbx .bsvg {
+          margin-right: 2px
+      }
+
+      .bkdatacar .bkeditbx .btn_modify {
+          margin: 0 0 0 10px
+      }
+
+      .bkdatacar .modfipagecab form {
+          display: block
+      }
+
+      .bkdatacar .modfipagecab .inpbx {
+          width: 100%;
+          margin-bottom: 5px;
+          padding: 0 5px;
+          margin-right: 0
+      }
+
+      .bkdatacar .modfipagecab .inpbx input,
+      .bkdatacar .modfipagecab .inpbx select {
+          font-size: 13px
+      }
+
+      .bkdatacar .modfipagecab .minpbx-split {
+          width: 100%
+      }
+
+      .bkdatacar .modfipagecab .minpbx-split .inpbx {
+          margin-right: 3px
+      }
+  }
+
+  /*Page CSS*/
